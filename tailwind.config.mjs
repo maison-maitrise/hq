@@ -22,10 +22,10 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "pattern-yellow": "url('./src/assets/bg.jpg')",
-        "pattern-black": "url('./src/assets/bg-black.jpg')",
-        "pattern-red": "url('./src/assets/bg-red.jpg')",
-        "pattern-blue": "url('./src/assets/bg-blue.jpg')",
+        "pattern-yellow": "url('./assets/bg.jpg')",
+        "pattern-black": "url('./assets/bg-black.jpg')",
+        "pattern-red": "url('./assets/bg-red.jpg')",
+        "pattern-blue": "url('./assets/bg-blue.jpg')",
       },
     },
   },
