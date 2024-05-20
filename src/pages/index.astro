@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import CopyHeading from "../components/CopyHeading";
+import "../css/fonts.css";
+import "../css/fx.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Maitrise | Coming Soon</title>
+  </head>
+  <body
+    class="font-bauer font-[100] bg-pattern-blue bg-cover bg-center w-[100vw] h-[100vh] flex items-center justify-center"
+  >
+    <main
+      class="text-[#ffffff] flex flex-col p-10 lg:p-56 gap-[5vh] items-center text-center uppercase tracking-[0.125em]"
+    >
+      <!-- Tagline -->
+      <h2 class="text-2xl text-mars shadow-text-addon">
+        From Reverie to Reality
+      </h2>
+      <!-- Logo -->
+      <div
+        class="shadow-[0_30px_20px_-30px] lg:shadow-[0_40px_50px_-25px] !shadow-ice pt-1"
+        role="presentation"
+      >
+        <!-- Wordmark -->
+        <Image
+          src="/WordmarkIce.svg"
+          alt="Maitrise Wordmark"
+          width={782}
+          height={169}
+        />
+      </div>
+
+      <section
+        class="font-maison text-white flex flex-col pt-5 gap-5 w-full items-center"
+      >
+        <div
+          class="flex flex-col gap-5 font-normal font-bauer items-center cursor-pointer"
+        >
+          <CopyHeading id="number" client:load
+            ><a id="number">(718)-283-4993</a></CopyHeading
+          >
+          <CopyHeading id="email" client:load>
+            <a id="email" href="mailto:messiah@maitrisedeluxe.com"
+              >MESSIAH@maitrisedeluxe.com</a
+            >
+          </CopyHeading>
+        </div>
+
+        <span
+          class="text-mars font-maison font-medium text-xl lg:text-3xl !leading-none shadow-text-addon"
+          >Digital Presence Development</span
+        >
+        <p class="font-maison">Coming soon...</p>
+      </section>
+    </main></body
+  >
+</html>
