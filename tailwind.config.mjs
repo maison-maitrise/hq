@@ -7,17 +7,22 @@ export default {
       snow: "#dffcff",
       mars: "#e6bd9e",
       lipstick: "#cd0000",
+      "red-revolt": "#f00000",
+      "tender-pink": "#E2A5A5",
     },
     fontFamily: {
       bauer: "'Bauer Bodni', serif",
       maison: "'Maison Neue', sans serif",
+      nympha: "Nympha, serif",
     },
     fontWeight: {
-      title: 100,
       bold: 700,
+      demi: 600,
       medium: 500,
       normal: 400,
       light: 300,
+      xlight: 200,
+      thin: 100,
       black: 900,
     },
     extend: {

@@ -1,5 +1,4 @@
 ---
-import CopyHeading from "../components/CopyHeading";
 import "../css/fonts.css";
 import "../css/fx.css";
 ---
@@ -9,55 +8,46 @@ import "../css/fx.css";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color" content="#e6bd9e" />
-    <title>Maitrise | Coming Soon</title>
+    <meta name="theme-color" content="#F00000" />
+    <title>#SummerValentine</title>
   </head>
   <body
-    class="font-bauer font-[100] bg-pattern-blue bg-cover bg-center w-[100vw] h-[100vh] flex items-center justify-center overflow-hidden"
+    class="w-[100vw] flex items-center justify-center bg-black overflow-x-hidden"
   >
     <main
-      class="text-[#ffffff] flex flex-col p-10 lg:p-56 gap-[5vh] items-center text-center tracking-[0.125em] translate-y-[4vh] h-fit"
+      class="flex flex-col items-center text-center max-w-full lg:p-64 bg-red-revolt"
     >
-      <!-- Tagline -->
-      <h2 class="text-xl lg:text-2xl text-mars shadow-text-addon normal-case">
-        From Reverie to Reality
-      </h2>
-      <!-- Logo -->
-      <div
-        class="shadow-[0_30px_20px_-30px] lg:shadow-[0_40px_50px_-25px] !shadow-ice pt-1"
-        role="presentation"
-      >
-        <!-- Wordmark -->
-        <img
-          src="/WordmarkIce.svg"
-          alt="Maitrise Wordmark"
-          width={782}
-          height={169}
-        />
-      </div>
-
-      <section
-        class="font-maison text-white flex flex-col pt-5 gap-5 w-full items-center"
-      >
+      <div class="flex flex-col items-center gap-[250px] max-w-full h-fit">
+        <img class="w-full" src="img/laniya-marry-me.png" />
         <div
-          class="flex flex-col gap-5 font-normal font-bauer items-center cursor-pointer uppercase"
+          class="flex flex-col items-center space-y-[-12vw] max-w-[75vw] relative"
         >
-          <CopyHeading id="number" client:load
-            ><a id="number">(718)-283-4993</a></CopyHeading
+          <img class="max-w-[460px] w-[24vw] z-10" src="img/ig-msg.png" />
+          <div
+            class="absolute top-[0px] -translate-y-[15%] z-30 text-[#fff] font-maison font-light text-2xl lg:text3xl"
           >
-          <CopyHeading id="email" client:load>
-            <a id="email" href="mailto:messiah@maitrisedeluxe.com"
-              >MESSIAH@maitrisedeluxe.com</a
-            >
-          </CopyHeading>
+            <h2 class="text-tender-pink">#EroticExploration</h2>
+            <h2 class="font-bold text-3xl lg:text-[48px]">#SummerValentine</h2>
+            <h2 class="text-tender-pink">#Divergent</h2>
+          </div>
+          <div
+            class="absolute inset-0 top-[200px] translate-y-full z-30 text-[#fff] font-maison font-light text-2xl lg:text3xl"
+          >
+            <h2 class="text-tender-pink">#EroticExploration</h2>
+            <h2 class="font-bold text-3xl lg:text-[48px]">#SummerValentine</h2>
+            <h2 class="text-tender-pink">#Divergent</h2>
+          </div>
+          <div class="relative z-0">
+            <img class="max-w-[75vw]" src="img/chey-msg.png" />
+          </div>
+          <img
+            class="max-w-[460px] w-[24vw] relative z-10"
+            src="img/bri-m-sg.png"
+          />
         </div>
 
-        <span
-          class="text-mars font-maison font-bold text-xl lg:text-3xl !leading-none capitalize shadow-text-addon"
-          >Digital Presence Development</span
-        >
-        <p class="font-bauer uppercase">Coming soon.</p>
-      </section>
-    </main></body
-  >
+        <img src="img/PR-4-Face.png" />
+      </div>
+    </main>
+  </body>
 </html>
