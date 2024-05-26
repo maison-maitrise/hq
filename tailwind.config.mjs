@@ -9,6 +9,7 @@ export default {
       lipstick: "#cd0000",
       "red-revolt": "#f00000",
       "tender-pink": "#E2A5A5",
+      noir: "#0F0F0F"
     },
     fontFamily: {
       bauer: "'Bauer Bodni', serif",

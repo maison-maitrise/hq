@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+}
+
+import "../css/fonts.css";
+import "../css/fx.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en" class="overflow-x-hidden">
+  <Head title={title} />
+  <body class="bg-red-revolt flex flex-col gap-6" class="overflow-x-hidden">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
