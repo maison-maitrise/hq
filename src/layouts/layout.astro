@@ -12,11 +12,13 @@ import "../css/main.css";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
 import Nav from "../components/Nav";
+import SpeedInsights from "@vercel/speed-insights/astro";
 const { title, bodyColor, bodyClassName } = Astro.props;
 ---
 
 <html lang="en" class="overflow-x-hidden lg:overflow-y-hidden hide-scrollbar">
   <Head title={title} />
+  <SpeedInsights />
   <body
     class={`bg-${bodyColor ?? "bg-red-revolt"} ${bodyClassName}  flex flex-col gap-6 overflow-x-hidden lg:overflow-y-hidden`}
   >
