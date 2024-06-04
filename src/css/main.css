@@ -14,4 +14,12 @@
   .text-neon-red {
     @apply [-webkit-text-stroke-width:0.5px] [-webkit-text-stroke-color:var(--Red-Desire,#F00000)] [font-family:"Maison_Neue_Ext"] text-xs font-light leading-[normal] [background:var(--Red-Leopard,url("/assets/patterns/red-leopard.jpg")_lightgray_50%_/_cover_no-repeat)] !bg-clip-text ![-webkit-background-clip:text] ![-webkit-text-fill-color:transparent];
   }
+
+  .red-glow {
+    @apply shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_88px_0px_rgba(240,0,0,0.50)];
+  }
+
+  .red-glow-mini {
+    @apply shadow-[0px_0px_1px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_0px_6px_0px_rgba(240,0,0,0.50)];
+  }
 }

@@ -13,10 +13,8 @@ const ContactDecoy = () => {
 
   return (
     <div
-      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center  transition-all duration-1000 ${
-        isClicked && !isInTransition
-          ? "shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_8px_0px_rgba(240,0,0,0.50)]"
-          : ""
+      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center rounded-2xl  transition-all duration-1000 ${
+        isClicked && !isInTransition ? "red-glow bg-[#000]" : ""
       }`}
     >
       <h1
@@ -36,7 +34,7 @@ const ContactDecoy = () => {
           <button
             className={`font-maison font-light text-tender-pink text-lg px-6 py-2 border-2 border-red-revolt hover:text-red-revolt hover:bg-opacity-20 bg-opacity-0 bg-tender-pink transition-all duration-500  ease-in ${
               isInTransition
-                ? "opacity-0 translate-y-[-1300%] shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_8px_0px_rgba(240,0,0,0.50)]"
+                ? "opacity-0 translate-y-[-1300%] red-glow"
                 : "opacity-100 translate-y-[0px]"
             }`}
             onClick={() => {
@@ -49,17 +47,17 @@ const ContactDecoy = () => {
         )}
         {(isClicked || isInTransition) && (
           <p
-            className={`font-maison !text-base lg:!text-lg text-tender-pink py-2 px-4 text-center transition-all duration-1000 ${
+            className={`!font-maison !text-base lg:!text-lg text-tender-pink p-4 text-center transition-all duration-1000 ${
               isInTransition
                 ? "opacity-0 translate-y-[-36%]"
-                : "opacity-100 translate-y-[0px] shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_8px_0px_rgba(240,0,0,0.50)]"
+                : "opacity-100 translate-y-[0px] red-glow-mini"
             }`}
           >
-            <span className="text-neon-red !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+            <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
               Our contact info is below.
             </span>{" "}
             You've come so far, might as well{" "}
-            <span className="text-neon-red !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+            <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
               reach out.
             </span>
           </p>
