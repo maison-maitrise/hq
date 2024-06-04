@@ -13,19 +13,34 @@ const ContactDecoy = () => {
 
   return (
     <div
-      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center rounded-md  transition-all duration-1000 ${
+      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center rounded-md  transition-all duration-1000 overflow-visible hide-scrollbar ${
         isClicked && !isInTransition ? "red-glow bg-[#000]" : ""
       }`}
     >
       <h1
-        className={`text-tender-pink font-nympha font-[900] text-4xl flex flex-col justify-center items-center text-center transition-all duration-1000 pt-[126px] ${
+        className={`italic text-tender-pink font-nympha font-[900] text-4xl flex flex-col justify-center items-center text-center transition-all duration-1000 pt-[126px] relative ${
           isInTransition
             ? "rotate-45 translate-y-[-50%]"
             : "rotate-0 translate-y-[0px] "
         }`}
       >
-        Tell me you're not{" "}
-        <span className="text-red-revolt text-6xl">
+        tell me you're not{" "}
+        <span
+          className={`text-red-revolt relative z-10  ${
+            isClicked && !isInTransition
+              ? "!font-nympha text-neon-red drop-shadow-[1px_1px_2px_rgba(240, 0, 0, 1)]"
+              : ""
+          } text-6xl not-italic`}
+        >
+          intrigued(?)... don't lie.
+        </span>
+        <span
+          className={`text-red-revolt absolute top-0 z-0 ${
+            isClicked && !isInTransition
+              ? "opacity-100 translate-x-[6px] translate-y-[136%]"
+              : "opacity-0 translate-x-[200%] -translate-y-[126%]"
+          }  transition-all duration-1000 text-6xl not-italic`}
+        >
           intrigued(?)... don't lie.
         </span>
       </h1>
