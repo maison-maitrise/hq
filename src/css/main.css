@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .red-image {
+    @apply w-[480px] h-[640px] shrink-1 [background:linear-gradient(0deg,#F00000_0%,#F00000_100%)] [background-blend-mode:soft-light,normal] shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_8px_0px_rgba(240,0,0,0.50)];
+  }
+
+  .red-title {
+    @apply text-8xl font-nympha [leading-trim:both] [text-edge:cap] tracking-[3.514px] bg-clip-text [-webkit-background-clip:text] [-webkit-text-fill-color:transparent];
+  }
+
+  .text-neon-red {
+    @apply [-webkit-text-stroke-width:0.5px] [-webkit-text-stroke-color:var(--Red-Desire,#F00000)] [font-family:"Maison_Neue_Ext"] text-xs font-light leading-[normal] [background:var(--Red-Leopard,url("/assets/patterns/red-leopard.jpg")_lightgray_50%_/_cover_no-repeat)] !bg-clip-text ![-webkit-background-clip:text] ![-webkit-text-fill-color:transparent];
+  }
+}

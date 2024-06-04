@@ -1,21 +1,26 @@
 ---
 interface Props {
   title: string;
+  bodyColor?: string;
+  bodyClassName?: string;
 }
 
 import "valentinesharedassets/dist/css/fonts.css";
 import "valentinesharedassets/dist/css/fx.css";
 import "valentinesharedassets/dist/css/reset.css";
-import Header from "../components/Header.astro";
+import "../css/main.css";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
-const { title } = Astro.props;
+import Nav from "../components/Nav";
+const { title, bodyColor, bodyClassName } = Astro.props;
 ---
 
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden lg:overflow-y-hidden">
   <Head title={title} />
-  <body class="bg-red-revolt flex flex-col gap-6" class="overflow-x-hidden">
-    <Header />
+  <body
+    class={`bg-${bodyColor ?? "bg-red-revolt"} ${bodyClassName}  flex flex-col gap-6 overflow-x-hidden `}
+  >
+    <Nav client:load />
     <slot />
     <Footer />
   </body>
