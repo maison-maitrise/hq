@@ -76,7 +76,7 @@ const ContactDecoy = () => {
                 id="money_start"
               >
                 <li className="slideItem">
-                  <p className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+                  <p className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg px-2 lg:px-6">
                     Our contact info is below.
                   </p>{" "}
                 </li>
@@ -84,7 +84,7 @@ const ContactDecoy = () => {
                   <p>You've come so far, might as well</p>
                 </li>
                 <li className="slideItem">
-                  <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+                  <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg px-2 lg:px-6">
                     reach out.
                   </span>
                 </li>

@@ -107,4 +107,5 @@
 .slider li {
   list-style: none;
   display: inline-block;
+  white-space: nowrap;
 }
