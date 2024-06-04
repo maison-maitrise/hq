@@ -13,7 +13,7 @@ const ContactDecoy = () => {
 
   return (
     <div
-      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center rounded-2xl  transition-all duration-1000 ${
+      className={`flex flex-col gap-8 lg:gap-6 mt-6 lg:mt-12 -mb-16 z-10 relative items-center justify-center rounded-md  transition-all duration-1000 ${
         isClicked && !isInTransition ? "red-glow bg-[#000]" : ""
       }`}
     >

@@ -16,7 +16,7 @@
   }
 
   .red-glow {
-    @apply shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_88px_0px_rgba(240,0,0,0.50)];
+    @apply shadow-[0px_0px_4px_0px_rgba(226,165,165,0.50),0px_0px_10px_0px_#F00000,0px_-4px_22px_0px_rgba(240,0,0,0.50)];
   }
 
   .red-glow-mini {
