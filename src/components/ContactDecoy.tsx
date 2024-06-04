@@ -44,6 +44,7 @@ const ContactDecoy = () => {
           </span>
         </span>
       </h1>
+
       <div className="flex flex-col items-center justify-center w-fit relative min-h-[126px] -mt-[20px]">
         {(!isClicked || isInTransition) && (
           <button
@@ -61,21 +62,35 @@ const ContactDecoy = () => {
           </button>
         )}
         {(isClicked || isInTransition) && (
-          <p
-            className={`!font-maison !text-base lg:!text-lg text-tender-pink p-4 text-center transition-all duration-1000 ${
+          <div
+            className={`!font-maison !text-base lg:!text-lg text-tender-pink p-4 text-center transition-all duration-1000  ${
               isInTransition
                 ? "opacity-0 translate-y-[-36%]"
                 : "opacity-100 translate-y-[0px] red-glow-mini"
             }`}
           >
-            <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
-              Our contact info is below.
-            </span>{" "}
-            You've come so far, might as well{" "}
-            <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
-              reach out.
-            </span>
-          </p>
+            <div className="slider">
+              <div className="edge"></div>
+              <ul
+                className="slideContainer text-red-revolt animate-slide"
+                id="money_start"
+              >
+                <li className="slideItem">
+                  <p className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+                    Our contact info is below.
+                  </p>{" "}
+                </li>
+                <li className="slideItem text-tender-pink">
+                  <p>You've come so far, might as well</p>
+                </li>
+                <li className="slideItem">
+                  <span className="text-red-revolt !decoration-red-revolt inline !text-base lg:!text-lg lg:px-6">
+                    reach out.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         )}
       </div>
       <a

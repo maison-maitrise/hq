@@ -34,4 +34,77 @@
     -ms-overflow-style: none; /* for IE and Edge */
     scrollbar-width: none; /* for Firefox */
   }
+
+  @keyframes slide {
+    0%,
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    34% {
+      transform: translateX(80%);
+    }
+    50% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 10s linear infinite;
+  }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.edge {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  display: block;
+}
+.edge:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: -webkit-linear-gradient(left, #000 2.6%, rgba(0, 0, 0, 0) 100%);
+  width: 25%;
+  height: 100%;
+}
+.edge:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: -webkit-linear-gradient(right, #000 2.6%, rgba(0, 0, 0, 0) 100%);
+  width: 25%;
+  height: 100%;
+}
+
+.slider ul {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin: 0;
+}
+.slider li {
+  list-style: none;
+  display: inline-block;
 }
