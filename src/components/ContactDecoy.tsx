@@ -20,13 +20,13 @@ const ContactDecoy = () => {
       <h1
         className={`italic text-tender-pink font-nympha font-[900] text-4xl flex flex-col justify-center items-center text-center transition-all duration-1000 pt-[126px] relative ${
           isInTransition
-            ? "rotate-45 translate-y-[-50%]"
+            ? "rotate-0 translate-y-[-50%]"
             : "rotate-0 translate-y-[0px] "
         }`}
       >
         tell me you're not{" "}
         <span
-          className={`text-red-revolt relative z-10  ${
+          className={`text-red-revolt relative z-10 animate-pulse ${
             isClicked && !isInTransition
               ? "drop-shadow-[1px_1px_2px_rgba(240, 0, 0, 1)]"
               : ""
