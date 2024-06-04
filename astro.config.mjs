@@ -9,5 +9,7 @@ import playformCompress from "@playform/compress";
 export default defineConfig({
   integrations: [tailwind(), react(), playformCompress()],
   output: "static",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
 });
