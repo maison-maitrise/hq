@@ -28,20 +28,20 @@ const ContactDecoy = () => {
         <span
           className={`text-red-revolt relative z-10  ${
             isClicked && !isInTransition
-              ? "!font-nympha text-neon-red drop-shadow-[1px_1px_2px_rgba(240, 0, 0, 1)]"
+              ? "drop-shadow-[1px_1px_2px_rgba(240, 0, 0, 1)]"
               : ""
           } text-6xl not-italic`}
         >
           intrigued(?)... don't lie.
-        </span>
-        <span
-          className={`text-red-revolt absolute top-0 z-0 ${
-            isClicked && !isInTransition
-              ? "opacity-100 translate-x-[6px] translate-y-[136%]"
-              : "opacity-0 translate-x-[200%] -translate-y-[126%]"
-          }  transition-all duration-1000 text-6xl not-italic`}
-        >
-          intrigued(?)... don't lie.
+          <span
+            className={`!font-nympha text-neon-red absolute left-0 top-0 z-0 ${
+              isClicked && !isInTransition
+                ? "opacity-100 translate-x-[1px] translate-y-[1px]"
+                : "opacity-0"
+            }  transition-all duration-1000 text-6xl not-italic`}
+          >
+            intrigued(?)... don't lie.
+          </span>
         </span>
       </h1>
       <div className="flex flex-col items-center justify-center w-fit relative min-h-[126px] -mt-[20px]">
