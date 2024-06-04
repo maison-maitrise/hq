@@ -79,7 +79,7 @@ const ContactDecoy = () => {
         )}
       </div>
       <a
-        className={`text-tender-pink hover:text-red-revolt transition-all text-lg mb-16 duration-1000 ${
+        className={`animate-pulse text-red-revolt hover:text-red-revolt transition-all text-lg mb-16 duration-1000 ${
           isInTransition ? "opacity-0 text-xs" : "opacity-100 text-lg"
         } ${
           isClicked && !isInTransition
