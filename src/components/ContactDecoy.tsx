@@ -26,7 +26,7 @@ const ContactDecoy = () => {
       >
         tell me you're not{" "}
         <span
-          className={`text-red-revolt relative z-10 animate-pulse ${
+          className={`text-red-revolt relative z-10  ${
             isClicked && !isInTransition
               ? "drop-shadow-[1px_1px_2px_rgba(240, 0, 0, 1)]"
               : ""
