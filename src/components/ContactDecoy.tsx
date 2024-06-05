@@ -33,15 +33,15 @@ const ContactDecoy = () => {
           } text-6xl not-italic`}
         >
           intrigued(?)... don't lie.
-          <span
+          {/* <span
             className={`!font-nympha text-neon-red absolute left-0 top-0 z-0 ${
               isClicked && !isInTransition
                 ? "opacity-100 translate-x-[1px] translate-y-[1px]"
                 : "opacity-0"
-            }  transition-all duration-1000 text-6xl not-italic hide-ios`}
+            }  transition-all duration-1000 text-6xl not-italic`}
           >
             intrigued(?)... don't lie.
-          </span>
+          </span> */}
         </span>
       </h1>
 
