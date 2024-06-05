@@ -38,7 +38,7 @@ const ContactDecoy = () => {
               isClicked && !isInTransition
                 ? "opacity-100 translate-x-[1px] translate-y-[1px]"
                 : "opacity-0"
-            }  transition-all duration-1000 text-6xl not-italic`}
+            }  transition-all duration-1000 text-6xl not-italic hide-ios`}
           >
             intrigued(?)... don't lie.
           </span>

@@ -109,3 +109,12 @@
   display: inline-block;
   white-space: nowrap;
 }
+
+@supports (-webkit-touch-callout: none) {
+  @media only screen and (max-width: 768px) {
+    .hide-ios {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
